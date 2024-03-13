@@ -4,7 +4,7 @@ DIDChain is framework for a verifiable supply chain data management system (VSCD
 ## DIDChain web app
 
 ### Architecture
-![alt Architecture DIDChain web app implementation](./screenshots/architecture.png =400x200)
+![alt Architecture DIDChain web app implementation](./screenshots/architecture.png)
 
 ### Frontend
 #### UI for documenting supply chain events
