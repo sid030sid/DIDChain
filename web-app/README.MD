@@ -25,6 +25,16 @@ This is the implementation of DIDChain as a web app.
         - log in, run `get_account_idtoken` endpoint and copy the outputted ``idToken``
         - add environment variable: ``CHEQD_CREDENTIAL_SERVICE_TOKEN`` and set it to the outputted ``idToken`` value
 
+### Architecture
+![alt Architecture DIDChain web app implementation](../screenshots/architecture.png)
+
+### Frontend
+#### UI for documenting supply chain events
+![alt Frontend for documenting supply chain events](../screenshots/frontend_documenting_milk_production.png)
+
+#### UI for tracing products and their compartments
+![alt Frontend for tracing products and their compartments](../screenshots/frontend_trace_product.png)
+
 ## Run tests
 1. Test tracing and tracking
     1. Open terminal and make sure to be located in folder `web-app`
