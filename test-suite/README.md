@@ -32,19 +32,3 @@
 4. Analyse test measuremnts and thus reproduce figures and evaluation results described in paper:
     1. Run all cells inside `benchmarking.ipynb`
     2. Examine output of cells and content of folder `plots` for analysis
-    
-
-## How to reproduce benchmarks for each implementation?
-1. reproduce measuremnts for implementation based on DIDs of type Cheqd with the help of Cheqd's Credential Service API:
-    1. navigate to folder of implementation by running `cd did-cheqd-credential-service-api`
-    2. intstall all packages by running `npm install` (Used Node.js version: v20.8.1)
-    3. create `.env` file in folder `did-cheqd-credential-service-api` and declare the following environment variables:
-        - ``MORALIS_API_KEY``: set thie variable to the API key after creating an account on moralis, like [so](https://docs.moralis.io/web3-data-api/evm/get-your-api-key#step-2-get-api-key)
-        - ``CHEQD_CREDENTIAL_SERVICE_TOKEN``: set this variable to the JWT API key returned by the `/account/idToken` GET request in the [Swagger](https://credential-service.cheqd.net/swagger/#/Account/get_account_idtoken) of the ``Credential Service API for cheqd network`` (login required first)
-        
-        NOTE: since it is a JWT, one needs to update this variable once the JWT token expires.
-    4. run `npm start` while being inside the folder `cd did-cheqd-credential-service-api` to start the implementation which essentialy is an api for documenting supply chain events using the ``Credential Service API for cheqd network``
-    5. open new terminal and run `npm run benchmarking`. This comand will run the benchmarking script for this implementation, ultimately leading to the ``measurements`` folder being populated.
-2. navigate back to root folder of repo
-3. install python packages, listed in `requirements.txt` (with Python 3.12.0)
-4. run all cells inside `benchmarking.ipynb` which will create figures in the folder `plots`
