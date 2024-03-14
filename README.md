@@ -1,6 +1,9 @@
 # DIDChain
 DIDChain is framework for a verifiable supply chain data management system (VSCDMS). This repo contains an implementation of it in the form of an web app. Moreover, a test suite for DIDChain's performance is included. 
 
+## Test suite
+- TODO
+
 ## DIDChain web app
 
 ### Architecture
