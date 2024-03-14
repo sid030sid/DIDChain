@@ -35,18 +35,6 @@ This is the implementation of DIDChain as a web app.
 #### UI for tracing products and their compartments
 ![alt Frontend for tracing products and their compartments](../screenshots/frontend_trace_product.png)
 
-## Run tests
-1. Test tracing and tracking
-    1. Open terminal and make sure to be located in folder `web-app`
-    2. Run `npm run test-tracing-tracking`
-    3. Outputted links reveal traced or tracked item's on- and off-chain stored information
-2. Test uploading files to IPFS
-    1. Set up by running `npm run start-backend` in folder `web-app`
-    2. Open new terminal and ...
-    3. Run `npm run test-ipfs-api` to test ipfs api 
-        - note: set up of `.env` file as mentioned in set up step of `Run web app` instructions needs to be have been done before
-        - note: running this command twice leads to an error so the server needs to restarted by killing the terminal and re-entering `npm run start-backend`
-
 ## Tools
 - DID:cheqd as DID method to digitally represent supply chain items on-chain
 - Creation and management of DIDs via [Swagger API of Credential Service](https://credential-service.cheqd.net/swagger)
