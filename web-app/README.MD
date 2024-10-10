@@ -37,7 +37,7 @@ This is the implementation of DIDChain as a web app.
 
 ## Tools
 - DID:cheqd as DID method to digitally represent supply chain items on-chain
-- Creation and management of DIDs via [Swagger API of Credential Service](https://credential-service.cheqd.net/swagger)
+- Creation and management of DIDs via [Swagger UI of Credential Service API](https://credential-service.cheqd.net/swagger)
 - IPFS for off-chain storage (uploads via Moralis API)
 - React for web app's frontend
 - Axios for HTTP request to internal and external APIs (e. g. to [CHEQD network API](https://resolver.cheqd.net/) to resolve DIDs)
